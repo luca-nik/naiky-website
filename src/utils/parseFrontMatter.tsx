@@ -27,7 +27,7 @@ export const parseFrontMatter = (text: string): FrontMatter => {
 
   frontMatter.split('\n').forEach((line) => {
     const [key, ...value] = line.split(': ');
-    
+
     if (key && value) {
       metadata[key.trim()] = value.join(': ').trim();
     }
