@@ -1,0 +1,22 @@
+/* Typewriter container styling */
+.typewriter-container {
+  font-size: 1.2rem; /* Match the font size with the description */
+  margin-top: 10px; /* Space above the typewriter text */
+  color: white; /* Ensure the text color matches your design */
+  /*height: 30px; /* Set a fixed height for the typewriter text container */
+  overflow: hidden; /* Prevent overflow if the text is too long */
+  text-align: center; /* Center align the typewriter text */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  /* Typewriter container styling */
+  .typewriter-container {
+    font-size: 1.2rem; /* Match the font size with the description */
+    margin-top: 10px; /* Space above the typewriter text */
+    color: white; /* Ensure the text color matches your design */
+    width: 99%; /* Set a fixed height for the typewriter text container */
+    overflow: hidden; /* Prevent overflow if the text is too long */
+    text-align: center; /* Center align the typewriter text */
+  }
+}

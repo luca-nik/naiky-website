@@ -1,0 +1,155 @@
+.blogpost-page {
+    max-width: 80%; /* Full width for both desktop and mobile */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; /* Center title and cover image */
+}
+
+.title-cover-container {
+    margin-bottom: 40px; /* Space between title, cover image, and content */
+    text-align: center; /* Center title and cover image */
+}
+
+.blogpost-title {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 10px; /* Space between title and cover image */
+    margin-top: 50px;
+}
+
+.blogpost-cover-image {
+    width: 80%; /* Set width to 50% of the container */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 4 / 2; /* Maintain 2:1.5 aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block; /* Ensure it's centered */
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 10px; /* Space from the top */
+}
+
+.blogpost-image {
+    max-width: 100%; /* Ensure image stays responsive */
+    max-height: 100vh;
+    border-radius: 15px; /* Add rounded corners */
+    display: block; /* Make sure image is treated as a block element */
+    margin-left: auto; /* Automatically center the image */
+    margin-right: auto; /* Automatically center the image */
+    margin-top: 20px; /* Add space at the top */
+    margin-bottom: 20px; /* Add space at the bottom */
+    object-fit: cover; /* Ensure the image covers its box */
+}
+
+.content-container {
+    max-width: 60%; /* Set max-width for content */
+    margin: 0 auto; /* Center the container */
+    text-align: left; /* Align text to the left */
+    object-position: center;
+}
+
+.blogpost-content {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    padding: 0 20px; /* Add padding for better text visibility */
+}
+.blogpost-date{
+    text-align: right;
+    display: block;
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 0%;
+    font-style: italic
+}
+
+/* Centering videos */
+.blogpost-video {
+    width: 100%; /* Set video width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center video with auto margins */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    display: block; /* Ensure it behaves like a block element */
+}
+.quote-box {
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    text-align: left; /* Center the text */
+    margin: 1.5em 0; /* Space above and below */
+}
+
+.quote-box blockquote {
+     background-color: rgba(255, 255, 255, 0.08); /* Almost transparent white background */
+    border-left: none; /* No border */
+    font-style: italic; /* Italic text */
+    font-family: 'Arial', sans-serif;
+    border-radius: 15px;
+    color: #333; /* Dark grey text */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+
+/* For mobile responsiveness */
+@media (max-width: 600px) {
+    .title-cover-container {
+        margin-bottom: 40px; /* Space between title, cover image, and content */
+        text-align: center; /* Center title and cover image */
+    }
+    
+    .blogpost-page {
+        max-width: 90%; /* Full width for both desktop and mobile */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .blogpost-title {
+        font-size: 2rem; /* Adjust title size for mobile */
+        margin-top: 100px;
+    }
+
+    .blogpost-cover-image {
+        width: 90%; /* Set width to 100% of the container on mobile */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        display: block; /* Ensure it's centered */
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 10px; /* Space from the top */
+    }
+    
+    .blogpost-image {
+        max-width: 100%; /* Ensure image stays responsive */
+        max-height: 90vh;
+        border-radius: 15px; /* Add rounded corners */
+        display: block; /* Make sure image is treated as a block element */
+        margin-left: auto; /* Automatically center the image */
+        margin-right: auto; /* Automatically center the image */
+        margin-top: 20px; /* Add space at the top */
+        margin-bottom: 20px; /* Add space at the bottom */
+        object-fit: cover; /* Ensure the image covers its box */
+    }
+
+    /* Centering videos */
+    .blogpost-video {
+        width: 100%; /* Set video width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 20px auto; /* Center video with auto margins */
+        border-radius: 15px; /* Add rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+        display: block; /* Ensure it behaves like a block element */
+    }
+    .content-container {
+        max-width: 90%; /* Set max-width for content */
+        margin: 0 auto; /* Center the container */
+        text-align: left; /* Align text to the left */
+        object-position: center;
+    }
+
+}

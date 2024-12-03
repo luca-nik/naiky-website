@@ -1,0 +1,108 @@
+/* Navbar styles */
+.navbar {
+    background-color: transparent; /* Transparent background */
+    padding: 10px 20px; /* Padding around navbar */
+    position: fixed; /* Fix navbar at the top */
+    margin-top: -10px;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keep it above other content */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-list {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Display items in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-list li {
+    margin-right: 20px; /* Space between items */
+}
+
+.navbar-list li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+/* Common link/button styles */
+.nav-link,
+.dropbtn {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for better click area */
+    border: none; /* Remove border */
+    background: none; /* No background for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.2rem; /* Consistent font size */
+    font-weight: 500; /* Uniform font weight */
+    display: flex; /* Flex container for links/buttons */
+    align-items: center; /* Center items vertically */
+    position: relative;
+}
+
+/* Underline effect on hover */
+.nav-link:hover,
+.dropbtn:hover {
+    text-decoration: underline; /* Add underline */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute;
+    background-color: #0093E9ab; /* Same color as navbar */
+    min-width: 160px;
+    z-index: 1; /* Ensure it appears above other elements */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Initially hide dropdown */
+}
+
+.dropdown-menu li {
+    text-align: left;
+}
+
+.dropdown-link {
+    display: flex;
+    padding: 10px;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+.dropdown-icon {
+  margin-left: 10px; /* Space between the icon and the text */
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+}
+
+/* Dropdown hover effect */
+.dropdown-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .navbar {
+        background-color: transparent; /* Transparent background */
+        padding: 10px 20px; /* Padding around navbar */
+        position: fixed; /* Fix navbar at the top */
+        margin-top: -10px;
+        margin-left: -14px;
+        width: 100%; /* Full width */
+        z-index: 1000; /* Keep it above other content */
+    }
+    .navbar-list {
+        flex-direction: row; /* Stack items vertically */
+    }
+}

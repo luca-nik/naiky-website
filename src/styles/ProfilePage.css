@@ -1,0 +1,137 @@
+/* General page styling */
+.profilepage {
+  width: 100%;
+  height: auto;  /* Set height to full viewport height */
+  overflow-y: scroll;  /* Enable vertical scrolling */
+  background-size: 100% 300vh;  /* Make the gradient span 3 times the viewport height */
+  background-attachment: local;/* Make the background fixed during scrolling */
+  scroll-snap-type: y mandatory;  /* Enable scroll snapping on the y-axis */
+  scroll-behavior: smooth;  /* Smooth scroll */
+  color: white;  /* White text by default */
+  scrollbar-width: none; /* Firefox - hides the scrollbar */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+/* Profile section */
+.profilepage-profile-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 30%; /* Full height for the profile section */
+  text-align: center; /* Center align text */
+  scroll-snap-align: start; /* Snap to the start of this section */
+  padding: 0; /* Remove any extra padding */
+  margin-top: 10%;
+}
+
+.profilepage-profile-icon {
+  width: 180px; /* Adjust size for the profile icon */
+  height: 180px; /* Maintain a square aspect ratio */
+  border-radius: 50%; /* Make the icon rounded */
+  object-fit: cover; /* Crop the image to fit */
+  margin-bottom: 20px; /* Add space below the image */
+  display: block; /* Ensure the image behaves as a block element */
+}
+
+.profilepage-profile-text {
+  display: flex;
+  flex-direction: column; /* Stack title and description vertically */
+  justify-content: center; /* Center text vertically within its container */
+  align-items: center; /* Center align text */
+  max-width: 90%; /* Ensure it doesn’t overflow horizontally */
+  word-wrap: break-word; /* Ensure long words wrap */
+  overflow-wrap: break-word; /* Break long text properly */
+}
+/* Ensure links have no underline */
+.profilepage-profile-section a {
+  text-decoration: none;  /* Remove underline from links */
+  color: white;  /* Set text color to white */
+}
+
+.profilepage-profile-section a:hover {
+  text-decoration: none;  /* Remove underline on hover */
+}
+
+
+.profilepage-name-title {
+  font-size: 2.5rem; /* Increase title size */
+  margin: 0; /* Remove default margin */
+  margin-bottom: 15px; /* Space below title */
+}
+
+.profilepage-description {
+  font-size: 1.2rem;  
+  margin-top: 5px;  
+  line-height: 1.5; /* Increase line height to avoid overlapping */
+  white-space: normal; /* Ensure text wraps to the next line */
+}
+
+
+/* Ensure links have no underline */
+.profilepage-section a {
+  text-decoration: none;  /* Remove underline from links */
+  color: white;  /* Set text color to white */
+}
+
+.profilepage-section a:hover {
+  text-decoration: none;  /* Remove underline on hover */
+}
+
+/* Full-screen section */
+.profilepage-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;  /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  overflow: hidden;  /* Ensure the image/video does not overflow */
+}
+
+.profilepage-content-container {
+    max-width: 50%; /* Set max-width for content */
+    margin: 0 auto; /* Center the container */
+    text-align: left; /* Align text to the left */
+    object-position: center;
+}
+
+.profilepage-content {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    text-align: left;
+    padding: 0 20px; /* Add padding for better text visibility */
+    text-decoration: none;  /* Remove underline from links */
+    color: white;  /* Set text color to white */
+}
+
+/* Remove the outline around the image on click/focus */
+.profilepage-profile-icon {
+  outline: none;  /* Removes the outline */
+}
+
+.profilepage-profile-icon:focus {
+  outline: none;  /* Ensure no focus outline on click */
+}
+
+.profilepage-profile-icon:active {
+  outline: none;  /* Ensure no active state outline */
+}
+
+/* For mobile responsiveness */
+@media (max-width: 600px) {
+  .profilepage-profile-section {
+    margin-top: 15%;
+  }
+  .profilepage-content-container {
+      max-width: 80%; /* Set max-width for content */
+      margin: 0 auto; /* Center the container */
+      text-align: left; /* Align text to the left */
+      object-position: center;
+  }
+
+}
+

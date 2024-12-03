@@ -1,0 +1,12 @@
+.loading-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    height: 100vh;          /* Full viewport height */
+    width: 100vw;           /* Full viewport width */
+}
+
+.loading-container p {
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,21 +1,62 @@
+/* Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Import the global CSS */
+@import "@/styles/GlobalStyles.css"; 
+
+/* Default color scheme */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0093E9;
+  --foreground: #ffffff;
+  --gradient-start: #0093E9;
+  --gradient-end: #ab99fc;
+  --scrollbar-color: #fcc999;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* Dark background for dark mode */
+    --foreground: #ededed; /* Light text for dark mode */
+    --gradient-start: #171717; /* Dark color for gradient start */
+    --gradient-end: #343434; /* Dark color for gradient end */
+    --scrollbar-color: #666; /* Dark scrollbar for dark mode */
   }
 }
 
+/* Global Page Styling */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Remove default margin */
+}
+
+.global-wrapper {
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes at least full height of viewport */
+  overflow-y: auto;  /* Allow scrolling if content exceeds viewport height */
+  background: linear-gradient(159deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  background-size: 100% 100%;  /* Ensure gradient covers the entire element */
+  background-attachment: local; /* Make background scroll with content */
+  scroll-snap-type: y mandatory;  /* Enable scroll snapping on the y-axis */
+  scroll-behavior: smooth;  /* Smooth scroll */
+  color: var(--foreground);  /* Text color */
+  scrollbar-width: thin; /* Firefox - make scrollbar thinner */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  position: relative;
+}
+
+/* Hide the scrollbar for Webkit browsers (Chrome, Safari) */
+.global-wrapper::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* Horizontal markdown lines styling */
+hr {
+  border: none; /* Remove the default border */
+  height: 2px; /* Height of the line */
+  background-color: var(--scrollbar-color); /* Color of the line */
+  margin: 20px 0; /* Space above and below the line */
 }

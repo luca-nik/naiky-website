@@ -1,0 +1,37 @@
+/* src/styles/GlobalStyles.css */
+
+/* Global Page Styling */
+body {
+  margin: 0; /* Remove default margin */
+}
+
+.global-wrapper {
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes at least full height of viewport */
+  overflow-y: auto;  /* Allow scrolling if content exceeds viewport height */
+  /*background: linear-gradient(to bottom, #00467f, #a5cc82);*/
+  background-color: #0093E9;
+  background: linear-gradient(159deg, #0093E9 0%, #ab99fc 100%);
+  background-size: 100% 100%;  /* Ensure gradient covers the entire element */
+  background-attachment: local; /* Make background scroll with content */
+  scroll-snap-type: y mandatory;  /* Enable scroll snapping on the y-axis */
+  scroll-behavior: smooth;  /* Smooth scroll */
+  color: white;  /* White text by default */
+  scrollbar-width: none; /* Firefox - hides scrollbar */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  position: relative;
+}
+
+/* Hide the scrollbar for Webkit browsers (Chrome, Safari) */
+.global-wrapper::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+
+/* Horizontal markdown lines styling*/
+hr {
+    border: none; /* Remove the default border */
+    height: 2px; /* Height of the line */
+    background-color: #fcc999; /* Color of the line */
+    margin: 20px 0; /* Space above and below the line */
+}
