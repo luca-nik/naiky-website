@@ -1,5 +1,6 @@
 import { Post } from '../types/post';
 import Link from 'next/link';
+import '@/styles/components/LatestPost.css'
 
 const LatestPost = ({ post }: { post: Post }) => {
   return (

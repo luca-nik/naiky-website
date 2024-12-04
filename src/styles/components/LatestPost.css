@@ -1,0 +1,126 @@
+/* Styling for the latest post */
+.latest-post-item {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Center align horizontally */
+    margin-top: 10%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Latest post image */
+.latest-post-image {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Details for the latest post */
+.latest-post-details {
+    background-color: transparent;
+    color: black;
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+
+/* Post title */
+.latest-post-item h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+/* Post excerpt */
+.latest-post-excerpt {
+    margin: 5px 0 0;
+    color: black;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.latest-post-date{
+    text-align: right;
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 2%;
+    font-style: italic
+}
+
+/* Hover effect on latest post item */
+.latest-post-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .latest-post-item {
+        /* Apply the same styles for both on mobile */
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+        text-decoration: none;
+        color: inherit;
+        align-items: center;
+        max-width: 90%; /* Responsive */
+        margin: auto;
+        margin-bottom: 20px; /* Space between items */
+    }
+
+    .latest-post-image{
+        width: 100%; /* Responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+
+    /* Post details container for both latest and regular posts */
+    .latest-post-details{
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    /* Post title */
+    .latest-post-item h2 {
+        font-family: Arial, sans-serif;
+        font-size: 1.8rem;
+        color: black;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Post excerpt */
+    .latest-post-excerpt{
+        margin: 5px 0 0;
+        color: black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .latest-post-date {
+        font-style: italic;
+        color: black;
+        font-size: 1.1rem;
+        text-align: right;
+        margin-top: 4%;
+    }
+}

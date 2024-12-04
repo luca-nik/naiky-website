@@ -1,0 +1,63 @@
+/* Section title */
+.section-page h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+/* Styling for section description */
+.section-page-description {
+    font-family: Arial, sans-serif; /* Font style */
+    color: #ffffff; /* Text color */
+    max-width: 600px;
+    width: 100%; /* Take up 100% of the page width */
+    background-color: transparent; /* Transparent background */
+    margin: 0 auto; /* Center align horizontally */
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+    margin-bottom: -8%;
+}
+
+/* Title in the description */
+.section-page-description-title {
+    font-weight: bold; /* Bold title */
+    font-size: 3rem; /* Font size for the title */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Align text to the left */
+}
+
+/* Description text */
+.section-page-description-text {
+    margin: 5px 0 0; /* Margin above the paragraph */
+    font-size: 1.2rem; /* Font size for the description */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Align text to the left */
+}
+
+
+
+
+/* responsive adjustments */
+@media (max-width: 600px) {
+    /* section description adjustments */
+    .section-page-description {
+        max-width: 90%; /* take up 90% of the page width */
+        margin-top: 40px;
+        padding-bottom: 15%;
+    }
+    
+    /* title in the description */
+    .section-page-description-title {
+        font-size: 3rem; /* font size for the title */
+    }
+    
+    /* description text */
+    .section-page-description-text {
+        font-size: 1.2rem; /* font size for the description */
+    }
+}
+

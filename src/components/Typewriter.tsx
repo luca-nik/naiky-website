@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';  // Make sure imports are at the top
-import '@/styles/Typewriter.css';
+import '@/styles/components/Typewriter.css';
 
 // Define the props type for the component
 interface TypewriterProps {

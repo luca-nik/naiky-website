@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';  // Use Next.js Link component
-import '../styles/Navbar.css'; // Import your styles
+import '@/styles/components/Navbar.css'; // Import your styles
 
 const Navbar: React.FC = () => {
   const [prevScrollPos, setPrevScrollPos] = useState<number>(0); // Default value is 0

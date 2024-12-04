@@ -1,5 +1,7 @@
 import { Post } from '@/types/post';
 import Link from 'next/link';
+import '@/styles/components/OtherPosts.css'
+
 
 const OtherPosts = ({ posts, section }: { posts: Post[]; section: string }) => {
   return (
