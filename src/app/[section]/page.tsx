@@ -9,14 +9,15 @@ type SectionPageProps = {
 
 const fetchPosts = async (section: string): Promise<{ posts: Post[]; error: string | null }> => {
   try {
-    const response = await fetch(`http://localhost:3000/_posts/${section}/index.json`);
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'; // Fallback to localhost
+    const response = await fetch(`${baseUrl}/_posts/${section}/index.json`);
     if (!response.ok) throw new Error('Failed to load index file');
 
     const { files } = await response.json();
 
     const posts = await Promise.all(
       files.map(async (file: string) => {
-        const markdownFile = await fetch(`http://localhost:3000/_posts/${section}/${file}`);
+        const markdownFile = await fetch(`${baseUrl}/_posts/${section}/${file}`);
         if (!markdownFile.ok) throw new Error(`Failed to load markdown file: ${file}`);
         const text = await markdownFile.text();
         const { title, excerpt, coverImage, date } = parseFrontMatter(text);
@@ -38,8 +39,10 @@ const fetchPosts = async (section: string): Promise<{ posts: Post[]; error: stri
   }
 };
 
-const SectionPage = async ({ params }: SectionPageProps) => {
-  const { section } = params; // Get section parameter from URL
+const SectionPage = async ({ params }: { params: { section: string } }) => {
+  // Await the `params` resolution
+  const section = (await params).section; // This will automatically handle async behavior in `app`
+
   const { posts, error } = await fetchPosts(section);
 
   const sectionTitles = {
