@@ -7,7 +7,7 @@ const OtherPosts = ({ posts, section }: { posts: Post[]; section: string }) => {
   return (
     <div className="posts-list">
       {posts.map((post) => (
-        <Link key={post.id} href={`/_posts/${section}/${post.id}`} className="post-item">
+        <Link key={post.id} href={`/${section}/${post.id}`} className="post-item">
           <img src={post.coverImage} alt={post.title} className="post-image" />
           <div className="post-details">
             <h2>{post.title}</h2>

@@ -58,25 +58,21 @@ const Navbar: React.FC = () => {
                 <li>
                   <Link href="/outdoor" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
                     Outdoor
-                    <img src="assets/outdoor-icon.png" alt="Outdoor Icon" className="dropdown-icon" />
                   </Link>
                 </li>
                 <li>
                   <Link href="/science" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
                     Science
-                    <img src="assets/science-icon.png" alt="Science Icon" className="dropdown-icon" />
                   </Link>
                 </li>
                 <li>
                   <Link href="/web3" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
                     Web3 & Tech
-                    <img src="assets/web3-icon.png" alt="Web3 Icon" className="dropdown-icon" />
                   </Link>
                 </li>
                 <li>
                   <Link href="/thoughts" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
                     Thoughts
-                    <img src="assets/thoughts-icon.png" alt="Thoughts Icon" className="dropdown-icon" />
                   </Link>
                 </li>
               </ul>

@@ -18,7 +18,7 @@ const SectionPage = ({
         <p className="section-page-description-text">{sectionDescriptions[section]}</p>
       </div>
 
-      {latestPost && <LatestPost post={latestPost} />}
+      {latestPost && <LatestPost post={{...latestPost, section}}/>}
 
       <OtherPosts posts={otherPosts} section={section} />
     </div>
