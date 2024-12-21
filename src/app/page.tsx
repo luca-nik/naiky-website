@@ -9,15 +9,13 @@ const HomePage = () => {
     <div className="homepage">
       {/* Profile Section */}
       <div className="profile-section">
-        <Link href="/me">
-          <div className="interactive-profile-section">
-            <img src="/_images/luca-nik.jpeg" alt="Profile Icon" className="profile-icon" />
-            <div className="profile-text">
-              <h1 className="name-title">Naiky</h1>
-              <p className="description">Hey, here it's me!</p>
-            </div>
+        <div className="interactive-profile-section">
+          <img src="/_images/luca-nik.jpeg" alt="Profile Icon" className="profile-icon" />
+          <div className="profile-text">
+            <h1 className="name-title">Naiky</h1>
+            <p className="description">Hey, here it's me!</p>
           </div>
-        </Link>
+        </div>
         
         <div className="typewriter-container">
           <Typewriter text="Thhis is my place where I share experiences and thoughts." speed={50} />
