@@ -12,7 +12,7 @@ const HomePage = () => {
           <img src="/_images/luca-nik.jpeg" alt="Profile Icon" className="profile-icon" />
           <div className="profile-text">
             <h1 className="name-title">Naiky</h1>
-            <p className="description">Hey, here it's me</p>
+            <p className="description">Hey, here it&#39;s me</p>
           </div>
         </div>
         
