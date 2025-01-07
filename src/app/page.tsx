@@ -23,9 +23,9 @@ const HomePage = () => {
       </div>
 
       {/* Sections */}
-      <Section href="/outdoor" videoSrc="/_videos/VID_20240907_155207554.mp4" title="Outdoor" />
-      <Section href="/science" videoSrc="/_videos/onde-canva.mp4" title="Science" />
       <Section href="/web3" videoSrc="/_videos/crypto.mp4" title="Web3 & Tech" />
+      <Section href="/science" videoSrc="/_videos/onde-canva.mp4" title="Science" />
+      <Section href="/outdoor" videoSrc="/_videos/VID_20240907_155207554.mp4" title="Outdoor" />
       <Section href="/thoughts" videoSrc="/_videos/costiera.mp4" title="Thoughts" />
     </div>
   );

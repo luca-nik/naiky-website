@@ -1,4 +1,9 @@
 /* Styling for the latest post */
+.latest-post {
+    padding: 20px; /* Add padding around the latest post */
+    box-sizing: border-box; /* Ensure padding does not overflow the container */
+}
+/* Styling for the latest post */
 .latest-post-item {
     margin-bottom: 40px;
     width: 100%;
@@ -14,8 +19,7 @@
     overflow: hidden;
     transition: box-shadow 0.3s ease;
     text-decoration: none;
-    color: inherit;
-}
+    color: inherit}
 
 /* Latest post image */
 .latest-post-image {
@@ -68,6 +72,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
+    .latest-post {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
     .latest-post-item {
         /* Apply the same styles for both on mobile */
         display: flex;

@@ -56,8 +56,8 @@ const Navbar: React.FC = () => {
             {dropdownVisible && ( // Show dropdown only when dropdownVisible is true
               <ul className="dropdown-menu">
                 <li>
-                  <Link href="/outdoor" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
-                    Outdoor
+                  <Link href="/web3" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
+                    Web3 & Tech
                   </Link>
                 </li>
                 <li>
@@ -66,8 +66,8 @@ const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/web3" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
-                    Web3 & Tech
+                  <Link href="/outdoor" className="dropdown-link" onClick={() => setDropdownVisible(false)}>
+                    Outdoor
                   </Link>
                 </li>
                 <li>
