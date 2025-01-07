@@ -3,7 +3,16 @@ import Typewriter from '@/components/Typewriter';
 import Section from '@/components/Section'; // Adjust path accordingly
 import '@/styles/HomePage.css';
 
-const HomePage = () => {
+// This is a Server Component by default in the App Router
+const HomePage = async () => {
+  // Fetch video data on the server side
+  const videoData = {
+    web3Video: '/_videos/crypto.mp4',
+    scienceVideo: '/_videos/onde-canva.mp4',
+    outdoorVideo: '/_videos/VID_20240907_155207554.mp4',
+    thoughtsVideo: '/_videos/costiera.mp4',
+  };
+
   return (
     <div className="homepage">
       {/* Profile Section */}
@@ -17,15 +26,15 @@ const HomePage = () => {
         </div>
         
         <div className="typewriter-container">
-          <Typewriter text="Thhis is my place where I share experiences and thoughts." speed={50} />
+          <Typewriter text="This is my place where I share experiences and thoughts." speed={50} />
         </div>
       </div>
 
       {/* Sections */}
-      <Section href="/web3" videoSrc="/_videos/crypto.mp4" title="Web3 & Tech" />
-      <Section href="/science" videoSrc="/_videos/onde-canva.mp4" title="Science" />
-      <Section href="/outdoor" videoSrc="/_videos/VID_20240907_155207554.mp4" title="Outdoor" />
-      <Section href="/thoughts" videoSrc="/_videos/costiera.mp4" title="Thoughts" />
+      <Section href="/web3" videoSrc={videoData.web3Video} title="Web3 & Tech" />
+      <Section href="/science" videoSrc={videoData.scienceVideo} title="Science" />
+      <Section href="/outdoor" videoSrc={videoData.outdoorVideo} title="Outdoor" />
+      <Section href="/thoughts" videoSrc={videoData.thoughtsVideo} title="Thoughts" />
     </div>
   );
 };
