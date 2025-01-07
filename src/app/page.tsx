@@ -7,10 +7,10 @@ import '@/styles/HomePage.css';
 const HomePage = async () => {
   // Fetch video data on the server side
   const videoData = {
-    web3Video: '/_videos/crypto.mp4',
-    scienceVideo: '/_videos/onde-canva.mp4',
-    outdoorVideo: '/_videos/VID_20240907_155207554.mp4',
-    thoughtsVideo: '/_videos/costiera.mp4',
+    web3Video: "/_videos/crypto.mp4",
+    scienceVideo: "/_videos/onde-canva.mp4",
+    outdoorVideo: "/_videos/VID_20240907_155207554.mp4",
+    thoughtsVideo: "/_videos/costiera.mp4",
   };
 
   return (
