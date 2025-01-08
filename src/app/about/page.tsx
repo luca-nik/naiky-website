@@ -14,7 +14,7 @@ const AboutPage = () => {
         <div className="about-description">
           <h1>About Me</h1>
           <p>
-            Hello! I'm Luca, a passionate developer, thinker, and creator. I enjoy solving 
+            Hello! I&#39;m Luca, a passionate developer, thinker, and creator. I enjoy solving 
             complex problems and sharing my experiences through blogs and projects. 
             Explore this space to know more about my journey!
           </p>
