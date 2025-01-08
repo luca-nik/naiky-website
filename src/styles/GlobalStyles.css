@@ -3,6 +3,9 @@
 /* Global Page Styling */
 body {
   margin: 0; /* Remove default margin */
+  font-family: 'sans-serif'; /* Set sans-serif font globally */
+  font-size: 18px; /* Default font size for the body */
+  line-height: 1.6; /* Optional: Adjust line height for better readability */
 }
 
 .global-wrapper {

@@ -1,3 +1,11 @@
+a {
+  color: inherit; /* Inherit color from the parent element */
+  text-decoration: underline; /* Underline the link */
+}
+
+a:hover {
+  text-decoration: underline; /* Keep the underline effect on hover */
+}
 /* General Layout */
 .about-page {
   padding: 20px;
