@@ -1,6 +1,7 @@
 import React from 'react';
 import Typewriter from '@/components/Typewriter';
 import Section from '@/components/Section'; // Adjust path accordingly
+import Link from 'next/link';  // Import Link component
 import '@/styles/HomePage.css';
 
 // This is a Server Component by default in the App Router
@@ -16,9 +17,8 @@ const HomePage = async () => {
   return (
     <div className="homepage">
       {/* Profile Section */}
-      <a 
-        href="/about" 
-        rel="noopener noreferrer" 
+      <Link 
+        href="/about"  // Use Link instead of an anchor tag
         className="profile-section-link"
       >
         <div className="profile-section">
@@ -31,10 +31,10 @@ const HomePage = async () => {
           </div>
           
           <div className="typewriter-container">
-            <Typewriter text="Thhis is my place where I share experiences and thoughts." speed={50} />
+            <Typewriter text="This is my place where I share experiences and thoughts." speed={50} />
           </div>
         </div>
-      </a>
+      </Link>
 
       {/* Sections */}
       <Section href="/web3" videoSrc={videoData.web3Video} title="Web3 & Tech" />
