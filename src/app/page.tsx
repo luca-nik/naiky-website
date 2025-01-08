@@ -26,7 +26,7 @@ const HomePage = async () => {
         </div>
         
         <div className="typewriter-container">
-          <Typewriter text="This is my place where I share experiences and thoughts." speed={50} />
+          <Typewriter text="Thhis is my place where I share experiences and thoughts." speed={50} />
         </div>
       </div>
 
