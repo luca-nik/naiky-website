@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Naiky Blog" />
+        <meta property="og:title" content="Naiky's Personal Blog" />
         <meta
           property="og:description"
           content="A personal blog to share experiences and thoughts."
@@ -32,7 +32,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Naiky's Personale Blog" />
+        <meta name="twitter:title" content="Naiky's Personal Blog" />
         <meta
           name="twitter:description"
           content="A personal blog to share experiences and thoughts."
