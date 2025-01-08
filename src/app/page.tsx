@@ -18,7 +18,6 @@ const HomePage = async () => {
       {/* Profile Section */}
       <a 
         href="/about" 
-        target="_blank" 
         rel="noopener noreferrer" 
         className="profile-section-link"
       >
