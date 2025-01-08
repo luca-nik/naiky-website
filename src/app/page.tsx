@@ -16,19 +16,26 @@ const HomePage = async () => {
   return (
     <div className="homepage">
       {/* Profile Section */}
-      <div className="profile-section">
-        <div className="interactive-profile-section">
-          <img src="/_images/luca-nik.jpeg" alt="Profile Icon" className="profile-icon" />
-          <div className="profile-text">
-            <h1 className="name-title">Naiky</h1>
-            <p className="description">Hey, here it&#39;s me</p>
+      <a 
+        href="/about" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="profile-section-link"
+      >
+        <div className="profile-section">
+          <div className="interactive-profile-section">
+            <img src="/_images/luca-nik.jpeg" alt="Profile Icon" className="profile-icon" />
+            <div className="profile-text">
+              <h1 className="name-title">Naiky</h1>
+              <p className="description">Hey, here it&#39;s me</p>
+            </div>
+          </div>
+          
+          <div className="typewriter-container">
+            <Typewriter text="Thhis is my place where I share experiences and thoughts." speed={50} />
           </div>
         </div>
-        
-        <div className="typewriter-container">
-          <Typewriter text="Thhis is my place where I share experiences and thoughts." speed={50} />
-        </div>
-      </div>
+      </a>
 
       {/* Sections */}
       <Section href="/web3" videoSrc={videoData.web3Video} title="Web3 & Tech" />

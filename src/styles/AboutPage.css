@@ -1,0 +1,81 @@
+/* General Layout */
+.about-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column; /* Stack image, description, and social links vertically */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.about-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.about-description {
+  max-width: 500px;
+  margin: 10px;
+}
+
+.about-description h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Social Links Section */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between the social links */
+  margin-top: 20px;
+}
+
+.github-social-link img {
+  width: 60px; /* Customized size for GitHub */
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.github-social-link img:hover {
+  transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+.linkedin-social-link img {
+  width: 60px; /* Customized size for LinkedIn */
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-social-link img:hover {
+  transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+/* Ensure responsiveness: Stack image and social links vertically on mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Ensure the layout stacks on mobile */
+  }
+
+  .social-links {
+    flex-direction: row; /* Keep social links in a row even on smaller screens */
+  }
+}

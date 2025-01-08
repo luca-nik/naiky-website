@@ -17,6 +17,11 @@
   display: none; /* Safari and Chrome */
 }
 
+.profile-section-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit;        /* Use the same text color as the parent */
+}
+
 /* Profile section */
 .profile-section {
   display: flex;
