@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://naiky-blog.vercel.app/_images/luca-nik.jpg"
+          content="https://naiky-blog.vercel.app/_images/luca-nik.jpeg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -39,7 +39,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         />
         <meta
           name="twitter:image"
-          content="https://naiky-blog.vercel.app/_images/luca-nik.jpg"
+          content="https://naiky-blog.vercel.app/_images/luca-nik.jpeg"
         />
       </head>
       <body className="global-wrapper">
