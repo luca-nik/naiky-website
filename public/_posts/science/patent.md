@@ -7,7 +7,7 @@ date: January 8, 2025
 ---
 
 # Advancing Molecular Sensor Design: Our Patented Computational Protocol
-During my PhD at [Scuola Normale Superiore](https://www.sns.it/en), I had the privilege of [contributing to a recently granted patent](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024033744). I'm excited to share our innovative computational framework for designing highly sensitive molecular sensors. This patented process addresses critical needs in chemical diagnostics and environmental monitoring by offering a systematic, computationally-driven approach to sensor design.
+During my PhD at [Scuola Normale Superiore](https://www.sns.it/en), I had the privilege of [contributing to a recently issued patent](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024033744). I'm excited to share our innovative computational framework for designing highly sensitive molecular sensors. This patented process addresses critical needs in chemical diagnostics and environmental monitoring by offering a systematic, computationally-driven approach to sensor design.
 
 ## The Challenge
 The detection of specific molecules in complex solutions represents one of the most persistent challenges in sensing technology. Our patent introduces a sophisticated computational process that harnesses the power of plasmonics – the interaction between light and nanoscale metallic structures – to design sensors capable of detecting even single molecules with remarkable precision.
