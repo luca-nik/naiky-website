@@ -65,6 +65,8 @@ export async function generateMetadata(
   const { section, postId } = resolvedParams;
   
   const { title, excerpt, coverImage } = await getBlogPost(section, postId);
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const imageUrl = coverImage ? `${baseUrl}/_images/${coverImage}` : undefined;
   
   return {
     title,
@@ -72,7 +74,21 @@ export async function generateMetadata(
     openGraph: {
       title,
       description: excerpt,
-      images: coverImage ? [`/_images/${coverImage}`] : [],
+      type: 'article',
+      images: imageUrl ? [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        }
+      ] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: excerpt,
+      images: imageUrl ? [imageUrl] : [],
     },
   };
 }

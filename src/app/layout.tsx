@@ -2,46 +2,36 @@
 import { ReactNode } from 'react';
 import '@/styles/GlobalStyles.css';
 import Navbar from '@/components/Navbar';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Naiky.xyz',
+  description: "A personal blog to share experiences and thoughts.",
+  openGraph: {
+    title: "Naiky's Personal Blog",
+    description: "A personal blog to share experiences and thoughts.",
+    url: 'https://naiky-blog.vercel.app',
+    siteName: "Naiky's Personal Blog",
+    images: [
+      {
+        url: 'https://naiky-blog.vercel.app/_images/luca-nik.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Naiky Blog Preview Image',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Naiky's Personal Blog",
+    description: "A personal blog to share experiences and thoughts.",
+    images: ['https://naiky-blog.vercel.app/_images/luca-nik.jpeg'],
+  },
+};
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Naiky.xyz</title>
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Naiky's Personal Blog" />
-        <meta
-          property="og:description"
-          content="A personal blog to share experiences and thoughts."
-        />
-        <meta property="og:url" content="https://naiky-blog.vercel.app" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://naiky-blog.vercel.app/_images/luca-nik.jpeg"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Naiky Blog Preview Image" />
-
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Naiky's Personal Blog" />
-        <meta
-          name="twitter:description"
-          content="A personal blog to share experiences and thoughts."
-        />
-        <meta
-          name="twitter:image"
-          content="https://naiky-blog.vercel.app/_images/luca-nik.jpeg"
-        />
-      </head>
       <body className="global-wrapper">
         <Navbar />
         <main>{children}</main>
