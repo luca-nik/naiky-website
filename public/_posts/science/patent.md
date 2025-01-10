@@ -1,6 +1,6 @@
 ---
-title: Computational Design of Plasmonic Nano-Sensors: From Quantum Mechanics to Single-Molecule Detection
-excerpt: Our patented in-silico approach combines quantum mechanics and classical electrodynamics to revolutionize the design of ultra-sensitive molecular sensors.
+title: Our Patented Technology for the Computational Design of Plasmonic Nano-Sensors
+excerpt: Combining quantum mechanics and classical electrodynamics to revolutionize the design of ultra-sensitive molecular sensors.
 coverImage: /posts/patent/plasmonic-sensor-design.jpeg
 date: January 8, 2025
 ---
