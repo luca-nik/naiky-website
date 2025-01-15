@@ -1,6 +1,7 @@
 {
     "files":
     [
+    "metronome.md",
     "intent_matching.md",
     "consensus_FL.md",
     "forward_routing.md"
