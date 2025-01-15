@@ -5,9 +5,9 @@ coverImage: /posts/metronome/cover.jpeg
 date: January 15, 2024
 ---
 ---
-# Research Lead Assignment Solutions: Metronome 1.0 Arbitrage
+# Risk-Free Arbitrage in the Metronome 1.0 Ecosystem: An In-Depth Analysis
 
-Today I provide insights into one of the solutions I developed for a job interview as Blockchain Research Lead. This solution focuses on analyzing arbitrage opportunities within the [Metronome (MET)](https://metronome.io/) cryptocurrency ecosystem and in particular in the old [Autonomous Converter Contract](https://etherscan.io/address/0x686e5ac50d9236a9b7406791256e47feddb26aba).
+This research focuses on analyzing arbitrage opportunities within the [Metronome (MET)](https://metronome.io/) cryptocurrency ecosystem, specifically within the [Autonomous Converter Contract](https://etherscan.io/address/0x686e5ac50d9236a9b7406791256e47feddb26aba). The study dives into blockchain-based mechanisms and explores the potential for risk-free arbitrage using Metronome's unique economic design.
 
 ## What You'll Find Here
 
@@ -31,8 +31,6 @@ Metronome is a fascinating case study in decentralized finance (DeFi) innovation
 You can find a complete breakdown of this solution, including equations, strategies, and Python simulation results, in the following document:
 
 <iframe src="../../_documents/MetronomeArbitrage.pdf" width="100%" height="600px"></iframe>
-
-[Explore the original GitHub Repository for knowing more about my code implementation](https://github.com/luca-nik/Blockchain_ResearchLead_Assignements)
 
 ---
 
