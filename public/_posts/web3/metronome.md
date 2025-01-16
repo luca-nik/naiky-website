@@ -2,7 +2,7 @@
 title: Exploring the Autonomous Converter Contract: Risk-Free Arbitrage in Metronome 1.0
 excerpt: A detailed analysis of risk-free arbitrage opportunities within the Metronome ecosystem, focusing on the Autonomous Converter Contract.
 coverImage: /posts/metronome/cover.jpeg
-date: January 15, 2024
+date: January 16, 2024
 ---
 ---
 # Risk-Free Arbitrage in the Metronome 1.0 Ecosystem: An In-Depth Analysis
