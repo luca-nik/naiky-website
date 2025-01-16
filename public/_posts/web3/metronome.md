@@ -5,6 +5,7 @@ coverImage: /posts/metronome/cover.jpeg
 date: January 16, 2024
 ---
 ---
+
 # Risk-Free Arbitrage in the Metronome 1.0 Ecosystem: An In-Depth Analysis
 
 This research focuses on analyzing arbitrage opportunities within the [Metronome (MET)](https://metronome.io/) cryptocurrency ecosystem, specifically within the [Autonomous Converter Contract](https://etherscan.io/address/0x686e5ac50d9236a9b7406791256e47feddb26aba). The study dives into blockchain-based mechanisms and explores the potential for risk-free arbitrage using Metronome's unique economic design.
