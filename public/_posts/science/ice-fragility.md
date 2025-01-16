@@ -1,5 +1,5 @@
 ---
-title: Science of Ice Climbing: Waterfall Ice Mechanical Stability
+title: The Science Behind Ice Climbing: Waterfall Ice Mechanical Stability
 excerpt: Explore the science behind waterfall ice stability and its impact on ice climbing safety.
 coverImage: /posts/ice-fragility/cover.jpeg
 date: January 16, 2025
