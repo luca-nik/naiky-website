@@ -9,9 +9,9 @@ date: January 15, 2024
 
 This research focuses on analyzing arbitrage opportunities within the [Metronome (MET)](https://metronome.io/) cryptocurrency ecosystem, specifically within the [Autonomous Converter Contract](https://etherscan.io/address/0x686e5ac50d9236a9b7406791256e47feddb26aba). The study dives into blockchain-based mechanisms and explores the potential for risk-free arbitrage using Metronome's unique economic design.
 
-## What You'll Find Here
+## What This Analysis Covers
 
-In this section, I detail my exploration of Metronome's unique economic design and the algorithmic strategy I proposed to exploit arbitrage opportunities effectively. Specifically, I delve into:
+In this post, I highlight my exploration of Metronome's unique economic design and the algorithmic strategy I proposed to exploit arbitrage opportunities effectively. Specifically, I look into:
 
 - The **Metronome 1.0 ecosystem** and its core components.
 - The **arbitrage opportunities** created by its dual-price mechanism.
@@ -24,7 +24,7 @@ Metronome is a fascinating case study in decentralized finance (DeFi) innovation
 
 ### Key Highlights of My Solution
 
-- **System Overview:** Analyzed the functionality of Metronome’s smart contracts, including the Daily Price Auction (DPA) and the Autonomous Converter Contract (ACC).
+- **System Overview:** Analyzed the functionality of Metronome's smart contracts, including the Daily Price Auction (DPA) and the Autonomous Converter Contract (ACC).
 - **Arbitrage Mechanics:** Developed a mathematical model to identify arbitrage opportunities between the DPA and ACC price mechanisms.
 - **Trading Strategy:** Designed a high-frequency trading strategy based on profit maximization, incorporating simulations to validate its effectiveness.
 
