@@ -12,7 +12,6 @@ This blog post introduces basic ideas surrounding intent matching, particularly 
 
 In the following document, I explore different cases, including no partial fills and partially fillable intents, analyzing how intent matching can be validated efficiently using linear algebra tools.
 
-Stay tuned
-
 <iframe src="../../_documents/intent_matching.pdf" width="100%" height="600px"></iframe>
 
+Stay tuned ...

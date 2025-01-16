@@ -32,6 +32,4 @@ You can find a complete breakdown of this solution, including equations, strateg
 
 <iframe src="../../_documents/MetronomeArbitrage.pdf" width="100%" height="600px"></iframe>
 
----
-
 Stay tuned ...
