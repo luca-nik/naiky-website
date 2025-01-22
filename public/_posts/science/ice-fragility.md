@@ -1,7 +1,7 @@
 ---
 title: The Science Behind Ice Climbing: Waterfall Ice Mechanical Stability
-excerpt: Explore the science behind waterfall ice stability and its impact on ice climbing safety.
-coverImage: /posts/ice-fragility/cover.jpeg
+excerpt: Explore the mechanical stability of waterfall ice and its impact on ice climbing safety.
+coverImage: /posts/ice-fragility/cover-3.jpeg
 date: January 16, 2025
 ---
 ---
@@ -46,4 +46,10 @@ Researchers studied two frozen waterfalls near Glacier d'Argentière, France –
 ## Conclusion
 
 This study sheds light on the factors influencing the stability of waterfall ice structures, particularly emphasizing the role of temperature fluctuations and the rate of cooling. While further research is needed, these findings provide valuable insights for ice climbers and highlight the importance of considering temperature conditions when assessing the stability of waterfall ice. 
+
+Stay safe out there!
+
+<img src="../../_images/posts/ice-fragility/Pippo-speed.jpg" alt="" class=blogpost-image />
+
+See you soon ...
 
