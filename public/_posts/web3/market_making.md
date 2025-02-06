@@ -62,7 +62,7 @@ Indeed my implementation does have several limitations:
 ## Reflection on Machine Learning
 
 I also reflect on the potential use of machine learning (ML) techniques, such as Long Short-Term Memory (LSTM) models, to simulate market dynamics and train a reinforcement learning (RL) strategy for market making. 
-If you are interested to this topic you might want to take a look to my GitHub repo where I am currently exploring this opportunity:
+If you are interested in this topic you might want to take a look to my GitHub repo where I am currently exploring this opportunity:
 
 [LSTM2RL-SynthCyptoMarketMaker](https://github.com/luca-nik/LSTM2RL-SynthCryptoMarketMaker) 
 
