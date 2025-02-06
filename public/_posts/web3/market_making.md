@@ -6,7 +6,7 @@ date: February 6, 2025
 ---
 # Introduction
 
-In this post i look into the key concepts of designing a market-making algorithm. The algorithm is intended to efficiently manage liquidity provision in a trading environment. The approach taken uses a combination of predictive analysis and risk management. The design and analysis of this market-making algorithm, uses a provided dataset of order book and trade data ([Binance IOTA/BTC Spot Market](https://www.binance.com/en/trade/IOTA_BTC?type=spot)) for the IOTA - BTC token couple from July 17, 2020, to July 30, 2020.  
+In this post I look into the key concepts of designing a market-making algorithm. The algorithm is intended to efficiently manage liquidity provision in a trading environment. The approach taken uses a combination of predictive analysis and risk management. The design and analysis of this market-making algorithm, uses a provided dataset of order book and trade data ([Binance IOTA/BTC Spot Market](https://www.binance.com/en/trade/IOTA_BTC?type=spot)) for the IOTA - BTC token couple from July 17, 2020, to July 30, 2020.  
 
 ## What is Market-Making and Why is it Important?
 
