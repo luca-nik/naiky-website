@@ -1,6 +1,6 @@
 ---
 title: Designing a Market-Making Algorithm for IOTA/BTC: A Predictive and Risk-Aware Approach
-excerpt: Explore how I designed a market-making algorithm for the IOTA/BTC pair on Binance, leveraging predictive fair value to optimize liquidity and effectively manage risks.
+excerpt: Explore how I designed a market-making algorithm for the IOTA/BTC pair on Binance.
 coverImage: posts/market_making/cover.jpeg  
 date: February 6, 2025  
 ---
