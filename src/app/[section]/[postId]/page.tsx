@@ -15,12 +15,28 @@ interface Props {
 
 type ErrorWithMessage = {
   message: string;
+};
+
+// Define the shape of the token
+interface Token {
+  type: string;
+  raw: string;
+  text: string;
+}
+
+// Define a more specific type for the tokenizers
+interface CustomTokenizer {
+  name: string;
+  level: 'inline' | 'block';
+  start(src: string): number | undefined;
+  tokenizer(src: string): Token | undefined;
+  renderer(token: Token): string;
 }
 
 // Create a custom tokenizer for inline math
-const mathInlineTokenizer = {
+const mathInlineTokenizer: CustomTokenizer = {
   name: 'mathInline',
-  level: 'inline',
+  level: 'inline', 
   start(src: string) {
     return src.match(/\$/)?.index;
   },
@@ -35,7 +51,7 @@ const mathInlineTokenizer = {
     }
     return undefined;
   },
-  renderer(token: any) {
+  renderer(token) {
     try {
       return katex.renderToString(token.text, {
         displayMode: false,
@@ -49,7 +65,7 @@ const mathInlineTokenizer = {
 };
 
 // Create a custom tokenizer for block math
-const mathBlockRule = {
+const mathBlockRule: CustomTokenizer = {
   name: 'mathBlock',
   level: 'block',
   start(src: string) {
@@ -66,7 +82,7 @@ const mathBlockRule = {
     }
     return undefined;
   },
-  renderer(token: any) {
+  renderer(token) {
     try {
       return katex.renderToString(token.text, {
         displayMode: true,
@@ -79,7 +95,7 @@ const mathBlockRule = {
   }
 };
 
-// Use the custom tokenizers
+// Use the custom tokenizers in the extensions array
 marked.use({
   extensions: [mathInlineTokenizer, mathBlockRule]
 });
