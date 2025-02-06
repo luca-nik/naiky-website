@@ -1,6 +1,7 @@
 {
     "files":
     [
+    "market_making.md",
     "metronome.md",
     "intent_matching.md",
     "consensus_FL.md",

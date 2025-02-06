@@ -2,6 +2,9 @@ import { marked } from 'marked';
 import { parseFrontMatter } from '@/utils/parseFrontMatter';
 import { Metadata } from 'next';
 import '@/styles/BlogPostPage.css';
+// Import KaTeX CSS and rendering function
+import 'katex/dist/katex.min.css';
+import katex from 'katex';
 
 interface Props {
   params: Promise<{
@@ -13,6 +16,73 @@ interface Props {
 type ErrorWithMessage = {
   message: string;
 }
+
+// Create a custom tokenizer for inline math
+const mathInlineTokenizer = {
+  name: 'mathInline',
+  level: 'inline',
+  start(src: string) {
+    return src.match(/\$/)?.index;
+  },
+  tokenizer(src: string) {
+    const match = src.match(/^\$([^$]+)\$/);
+    if (match) {
+      return {
+        type: 'mathInline',
+        raw: match[0],
+        text: match[1].trim(),
+      };
+    }
+    return undefined;
+  },
+  renderer(token: any) {
+    try {
+      return katex.renderToString(token.text, {
+        displayMode: false,
+        throwOnError: false
+      });
+    } catch (error) {
+      console.error('KaTeX error:', error);
+      return token.raw;
+    }
+  }
+};
+
+// Create a custom tokenizer for block math
+const mathBlockRule = {
+  name: 'mathBlock',
+  level: 'block',
+  start(src: string) {
+    return src.match(/```math/)?.index;
+  },
+  tokenizer(src: string) {
+    const match = src.match(/^```math\n([\s\S]+?)\n```/);
+    if (match) {
+      return {
+        type: 'mathBlock',
+        raw: match[0],
+        text: match[1].trim(),
+      };
+    }
+    return undefined;
+  },
+  renderer(token: any) {
+    try {
+      return katex.renderToString(token.text, {
+        displayMode: true,
+        throwOnError: false
+      });
+    } catch (error) {
+      console.error('KaTeX error:', error);
+      return token.raw;
+    }
+  }
+};
+
+// Use the custom tokenizers
+marked.use({
+  extensions: [mathInlineTokenizer, mathBlockRule]
+});
 
 async function getBlogPost(section: string, postId: string) {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
@@ -32,11 +102,11 @@ async function getBlogPost(section: string, postId: string) {
 export default async function BlogPostPage({ params }: Props) {
   const resolvedParams = await params;
   const { section, postId } = resolvedParams;
-
+  
   try {
     const { title, coverImage, date, content } = await getBlogPost(section, postId);
     const htmlContent = marked(content);
-
+    
     return (
       <div className="blogpost-page">
         <div className="title-cover-container">
