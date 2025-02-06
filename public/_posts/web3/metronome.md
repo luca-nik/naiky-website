@@ -33,4 +33,10 @@ You can find a complete breakdown of this solution, including equations, strateg
 
 <iframe src="../../_documents/MetronomeArbitrage.pdf" width="100%" height="600px"></iframe>
 
+The Github repository containing all the original codes to produce this anaylsis can be found at:
+
+[metronome-arbitrage-analysis](https://github.com/luca-nik/metronome-arbitrage-analysis)
+
+---
+
 Stay tuned ...
