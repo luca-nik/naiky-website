@@ -42,7 +42,7 @@ const AboutPage = () => {
         {/* Achievements Section */}
         <div className="about-achievements">
           <h2>Achievements</h2>
-          <p><a href="https://scholar.google.com/citations?user=SsTwaqEAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">8 peer-reviewed journal articles</a>, 3 international conference presentations,<a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024033744" target="_blank" rel="noopener noreferrer">1 International patent</a>.</p>
+          <p><a href="https://scholar.google.com/citations?user=SsTwaqEAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">8 peer-reviewed journal articles</a>, 3 international conference presentations, <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024033744" target="_blank" rel="noopener noreferrer">1 International patent</a>.</p>
           <p>Founder of <a href="https://sites.google.com/view/matwins/home" target="_blank" rel="noopener noreferrer">MatTwins</a>, an initiative leveraging surrogate Machine Learning models to reduce the computational complexity of the discovery of novel materials.</p>
         </div>
 
