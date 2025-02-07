@@ -23,7 +23,7 @@ const AboutPage = () => {
             Now, I&#39;m diving into the world of blockchain technology, eager to build Web3 applications.
           </p>
           <p>
-            Previously, I worked as an MEV Scientist Engineer at <a href="https://www.urani.trade/" target="_blank" rel="noopener noreferrer">Urani</a>, specializing in toxic MEV reduction on Solana through <a href="https://github.com/urani-trade/solana-mev-agent-py" target="_blank" rel="noopener noreferrer">intent-matching and optimal routing algorithms</a>.
+            Previously, I worked as an MEV Scientist Engineer at <a href="https://www.urani.trade/" target="_blank" rel="noopener noreferrer">Urani.trade</a>, specializing in toxic MEV reduction on Solana through <a href="https://github.com/urani-trade/solana-mev-agent-py" target="_blank" rel="noopener noreferrer">intent-matching and optimal routing algorithms</a>.
           </p>
         </div>
 
