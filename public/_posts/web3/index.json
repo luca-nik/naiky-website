@@ -1,6 +1,7 @@
 {
     "files":
     [
+    "fair_trade_problem.md",
     "market_making.md",
     "metronome.md",
     "intent_matching.md",
