@@ -1,10 +1,11 @@
 ---
-
 title: The Fair Exchange Problem: A Mathematical Perspective  
 excerpt: A deep dive into the fair exchange problem and its implications, with Ethereum's PBS as an illustrative example.  
 coverImage: /posts/fair_trade_problem/cover.png  
 date: Februray 10, 2025
 ---
+---
+
 ## Introduction
 
 Fair exchange is a fundamental problem in distributed systems and game theory that arises when two or more parties wish to exchange assets without trusting each other. This challenge has profound implications for modern blockchain systems, particularly in Ethereum's **Proposer-Builder Separation (PBS)**, where relays act as intermediaries between block proposers and builders. In this article, I will:
