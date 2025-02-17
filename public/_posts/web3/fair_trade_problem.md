@@ -2,7 +2,7 @@
 title: The Fair Exchange Problem: A Mathematical Perspective  
 excerpt: A deep dive into the fair exchange problem and its implications, with Ethereum's PBS as an illustrative example.  
 coverImage: /posts/fair_trade_problem/cover.png  
-date: Februray 10, 2025
+date: February 10, 2025
 ---
 ---
 
